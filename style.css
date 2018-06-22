@@ -1,0 +1,343 @@
+.wizarddialogMM {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 5px;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+.singleTab{
+    background-color:	black;
+    color:				white;
+    position:			relative;
+    float:				right;
+}
+
+ul.nav li{
+	cursor: pointer;
+}
+
+/*Lists*/
+
+.box-set-list {
+    position: relative;
+    height: 550px;
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:center;
+    height:340px;
+}
+
+.box-set-list .list{
+    width: 100%;
+    height:100%;
+    float: left;
+}
+
+.box-set-list .list .list-row{
+    height:100%;
+    /*padding-top:5%;*/
+}
+
+.box-set-list .list .list-row .chart-list{
+    width:174px;
+    height:280px;
+    position:relative;
+    float: left;
+    margin-left:5%;
+    /*margin-top: 28px;*/
+}
+.chart-basic{
+    width:200px;
+    height:260px;
+    position:relative;
+    float: left;
+    /*margin-left:5%;*/
+    margin-top: 10px;
+    z-index:10;
+}
+
+.text-basic{
+    width:100%;
+    height:20px;
+    position:relative;
+    float: left;
+    margin-left:5%;
+    z-index:10;
+    font-size:18px;
+}
+/* The First modal */
+.modalBase {
+    //display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 150px; /* Location of the box */
+    left: 15%;
+    top: 0;
+    width: 1150px; /* Full width */
+    height: 600px; /* Full height */  
+}
+.base-content{
+    border-color: #808080;
+    box-shadow: 0 2px 25px rgba(0, 0, 0, 0.4);
+}
+/* The Modal Filtering */
+.modalFil {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 12%; /* Location of the box */
+    left: 15%;
+    top: 0;
+    width: 1150px; /* Full width */
+    height: 600px; /* Full height */  
+}
+/* The Close Button */
+.close {
+    float: right;
+    /*color: white;    
+    font-size: 15px;
+    font-weight: bold;*/
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.modalVar {
+    display: none; 
+    position: relative; 
+    z-index: 5; 
+    padding-top: 12%; 
+    left: -5%;
+    top: 0;
+    width: 210px; 
+    height: 240px; 
+}
+.modalVar-header {
+    padding: 2px 16px;
+    height: 22px;
+    border-radius: 3px;
+    background-color: #FBFBFB;
+    font-family: "QlikView Sans";
+    color:#595959;
+    font-size: 14px;
+    font-weight: bold;
+    vertical-align: middle;
+    border-bottom: 1px solid #e5e5e5;
+}
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+.modal-header {
+    padding: 2px 16px;
+    height: 44px;
+    border-radius: 3px;
+    background-color: #FBFBFB;
+    font-family: "QlikView Sans";
+    color:#595959;
+    font-size: 18px;
+    font-weight: bold;
+    vertical-align: middle;
+    border-bottom: 1px solid #e5e5e5;
+}
+.modal-body {
+    padding: 30px 16px;
+    max-height: calc(100vh - 150px);
+    /*overflow: auto;*/
+    background-color: white;
+}
+
+.iconadd {
+    /*cursor:pointer;
+    padding-right:10px;
+    float:left;    
+    width:20px;*/
+}
+
+.icondel {}
+.iconexc {}
+.iconall {}
+.icondol {}
+.button-stretch{
+    width:18px;
+}
+/* The container */
+.containerbox{
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;    
+    width: 100%;    
+}
+.containerbox .left
+{
+    float: left;
+    width: 15%;
+    height: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);    
+}
+.containerbox .right
+{
+    float: left;
+    width: 85%;
+    height: 100%;
+}
+.containerf {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-top: 12px;
+    width: 100px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: normal !important;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.containerf input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmarkf {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.containerf:hover input ~ .checkmarkf {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.containerf input:checked ~ .checkmarkf {
+    background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmarkf:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.containerf input:checked ~ .checkmarkf:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.containerf .checkmarkf:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.inputf{}
+.inputv{}
+
+.cols{
+    width:15%;
+    float:left;
+    position:relative;
+}
+
+.emptyChart{}
+
+.btnStd{
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.428571429;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+.btnStd-primary{
+    color: #fff;
+    background-color: #428bca;
+    border-color: #357ebd;
+}
+.btnStd-success{
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+}
+.btnStd-warning{
+    color: #fff;
+    background-color: #f0ad4e;
+    border-color: #eea236;
+}
+.btnStd-danger{
+    color: #fff;
+    background-color: #d9534f;
+    border-color: #d43f3a;
+}
+
+.Formula{
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 500;
+    line-height: 1.1;
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}

@@ -1,0 +1,7 @@
+{
+	"name" : "Master Measure Wizard",
+	"description" : "Master Measure Wizard",
+	"type" : "visualization",
+	"version": "1.0",
+	"author": "Ivan Felipe ife@qlik.com QlikTech iberia"
+}
